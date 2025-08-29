@@ -11,7 +11,6 @@
     <style>
         /* General Styles & Variables */
         :root {
-            /* New vibrant color palette inspired by the screenshot */
             --primary-bg: #1a1a2e;
             --secondary-bg: #141424;
             --text-color: #e0e0e0;
@@ -19,7 +18,7 @@
             --accent-blue: #6a0dad;
             --accent-purple: #8a2be2;
             --accent-pink: #ff69b4;
-            --accent-yellow: #fbc02d; /* Updated to a less bright yellow */
+            --accent-yellow: #fbc02d;
             --gradient-sky: linear-gradient(to right, #4a00e0, #8e2de2, #ff69b4, #ffa500);
             --gradient-mountains: linear-gradient(to top, rgba(138, 43, 226, 0.5), transparent);
             --border-radius: 12px;
@@ -47,7 +46,6 @@
             padding: 0 1rem;
         }
 
-        /* Header and Navigation */
         header {
             position: sticky;
             top: 0;
@@ -83,7 +81,6 @@
             color: var(--accent-yellow);
         }
 
-        /* Hero Section - Inspired by the vibrant screenshot */
         .hero {
             display: flex;
             flex-direction: column;
@@ -99,7 +96,6 @@
             transition: all 0.5s ease;
         }
         
-        /* A subtle layered mountain effect using a pseudo-element */
         .hero::before {
             content: '';
             position: absolute;
@@ -124,13 +120,12 @@
             font-weight: 300;
         }
 
-        /* Avatar styling */
         .avatar-container {
             margin-bottom: 2rem;
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            padding: 5px; /* Creates the border effect */
+            padding: 5px;
             background: linear-gradient(to right, var(--accent-pink), var(--accent-yellow));
             box-shadow: 0 0 15px rgba(255, 105, 180, 0.5), 0 0 25px rgba(251, 192, 45, 0.5);
             transition: transform 0.3s ease-in-out;
@@ -145,10 +140,9 @@
             height: 100%;
             object-fit: cover;
             border-radius: 50%;
-            border: 4px solid var(--primary-bg); /* Inner border to match background */
+            border: 4px solid var(--primary-bg);
         }
 
-        /* Main Content Sections */
         section {
             padding: 4rem 1rem;
             margin-bottom: var(--spacing-unit);
@@ -180,101 +174,6 @@
             border-radius: 2px;
         }
 
-        /* Specific rule for the course modules heading */
-        #about-course h3 {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        /* About Me Section Styling */
-        .about-me-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .about-item {
-            padding: 1.5rem;
-            background-color: rgba(0, 0, 0, 0.2);
-            border-radius: var(--border-radius);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .about-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
-        }
-
-        .about-item h3 {
-            font-size: 1.25rem;
-            color: var(--accent-yellow);
-            margin-bottom: 0.75rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .about-item p {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .about-item ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .about-item ul li {
-            position: relative;
-            padding-left: 1.25rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .about-item ul li::before {
-            content: '•';
-            color: var(--accent-yellow);
-            position: absolute;
-            left: 0;
-        }
-
-        /* About Course Section Styling */
-        .course-details-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .course-module {
-            padding: 1.5rem;
-            background-color: rgba(0, 0, 0, 0.2);
-            border-radius: var(--border-radius);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .course-module:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
-        }
-
-        .course-module h3 {
-            font-size: 1.2rem;
-            color: var(--accent-yellow);
-            margin-bottom: 0.5rem;
-        }
-
-        .course-module p {
-            font-size: 0.95rem;
-            opacity: 0.8;
-        }
-
-        .course-module .topics {
-            font-style: italic;
-            font-size: 0.85rem;
-            opacity: 0.6;
-            margin-top: 0.75rem;
-        }
-
-        /* Submissions Section Styling */
         .submissions-list {
             list-style: none;
             padding: 0;
@@ -309,7 +208,6 @@
             color: var(--heading-color);
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 2rem 1rem;
@@ -318,19 +216,10 @@
             color: rgba(255, 255, 255, 0.5);
             border-radius: var(--border-radius) var(--border-radius) 0 0;
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
     </style>
 </head>
 <body>
 
-    <!-- Header and Navigation -->
     <header>
         <div class="container nav-container">
             <a href="#" class="logo">Victor Meza</a>
@@ -342,7 +231,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <div class="hero">
         <div class="avatar-container">
             <img src="https://raw.githubusercontent.com/hollydsullivan/graph-ai-portfolio/main/pexels-michael-obstoj-1772571864-33549622.jpg" alt="A professional portrait of Victor Meza" class="avatar">
@@ -352,119 +240,29 @@
     </div>
 
     <main class="container">
-        <!-- About Me Section -->
-        <section id="about-me">
-            <h2>About Me</h2>
-            <div class="about-me-grid">
-                <div class="about-item">
-                    <h3 style="color: var(--accent-yellow);">Objective</h3>
-                    <p>First year undergraduate student seeking a spring quarter internship at the Student Farm Market Garden to gain experience in small-scale organic mixed vegetable production.</p>
-                </div>
-                <div class="about-item">
-                    <h3 style="color: var(--accent-yellow);">Education</h3>
-                    <p>Bachelor of Science in International Agriculture Development</p>
-                    <p>University of California, Davis</p>
-                    <p>Expected June 2026</p>
-                    <p>Relevant Coursework: Botany & Physiology of Cultivated Plants, Soils in Our Environment, Introduction to International Agricultural Development</p>
-                </div>
-                <div class="about-item">
-                    <h3 style="color: var(--accent-yellow);">Skills</h3>
-                    <ul>
-                        <li>Intermediate proficiency in Microsoft Office (Word, Excel, PowerPoint)</li>
-                        <li>Fluent in spoken Tagalog, beginner level in written ability</li>
-                    </ul>
-                </div>
-                <div class="about-item">
-                    <h3 style="color: var(--accent-yellow);">Experience</h3>
-                    <p><strong>Volunteer, Knights Landing One Health Center</strong><br><em>October 2022 - Present</em></p>
-                    <ul>
-                        <li>Maintained clean exam rooms for customer use by sanitizing tables and chairs, and stocking supplies after each appointment in preparation for incoming clinic staff and patients.</li>
-                        <li>Worked at reception to set up computers and printers to check patients in, following the clinic's standard verification process to ensure accurate data collection and management.</li>
-                        <li>Served as Tagalog interpreter for 10+ patients and medical students, providing excellent customer service and a welcoming environment.</li>
-                    </ul>
-                    <p><strong>Shop Owner, Plants4You</strong><br><em>June 2019 - Present</em></p>
-                    <ul>
-                        <li>Runs an online shop on Etsy selling carnivorous and drought-resistant plants with over 500 sales and $5,700+ in revenue.</li>
-                        <li>Propagate 100+ plants from seedlings in home garden through watering, structural pruning, and monitoring.</li>
-                        <li>Minimized pest damage to the garden through weekly weeding, dead or infected leaf management, and inclusion of ladybugs.</li>
-                        <li>Effectively organized tracking system to manage plant inventory and shipping supplies using Microsoft Excel, decreasing shipping costs by 15%.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <!-- About the Course Section -->
-        <section id="about-course">
-            <h2>About the Course</h2>
-            <p>Are you copy-pasting text into ChatGPT but struggling to see how AI can substantially transform your work? In this 8-week course, you’ll learn to automate significant parts of your content creation, research, data analysis, and knowledge management workflows as you build AI solutions to boost productivity for yourself and your team.</p>
-            <br>
-            <h3 style="color: var(--heading-color); margin-bottom: 2rem;">Course Modules</h3>
-            <div class="course-details-grid">
-                <div class="course-module">
-                    <h3 style="color: var(--accent-yellow);">Documents, Presentations & Websites</h3>
-                    <p>Generate high-quality content for reports, papers, presentations and websites. Learn how large language models (LLMs) work and how to get the most out of them.</p>
-                    <p class="topics">Topics: LLM fundamentals, content generation, no-code websites, Markdown documents, AI presentations</p>
-                </div>
-                <div class="course-module">
-                    <h3 style="color: var(--accent-yellow);">Automated Data Analysis</h3>
-                    <p>Master AI tools for analyzing data, manipulating files, and creating automated reports. Use Julius, ChatGPT Code Interpreter and Windsurf to process datasets, visualize results, and generate reports quickly.</p>
-                </div>
-                <div class="course-module">
-                    <h3 style="color: var(--accent-yellow);">GenAI for Research & Text Analysis</h3>
-                    <p>Learn AI techniques for literature search, text analysis, and knowledge synthesis. Use tools like Elicit & LiteRev for literature reviews, and deploy LLMs for text classification, sentiment analysis and summarization.</p>
-                    <p class="topics">Topics: Elicit, Literev, text summarization, text classification, sentiment analysis, knowledge extraction</p>
-                </div>
-                <div class="course-module">
-                    <h3 style="color: var(--accent-yellow);">Custom GPTs and Chatbots</h3>
-                    <p>Build chatbots for research assistance, knowledge management, or specific task support. Explore RAG systems, API integrations, and Botpress workflows.</p>
-                    <p class="topics">Topics: RAG systems, Custom GPT Builder, Botpress workflows, API integration, knowledge base connection</p>
-                </div>
-                <div class="course-module">
-                    <h3 style="color: var(--accent-yellow);">AI Tools for Workflow Automation</h3>
-                    <p>Automate repetitive tasks across various platforms and workflows. Configure systems with Make.com to reclaim hours of your workweek.</p>
-                    <p class="topics">Topics: Lindy automations, Make.com workflows, GSheets integration, Gmail API, task orchestration</p>
-                </div>
-                <div class="course-module">
-                    <h3 style="color: var(--accent-yellow);">GenAI for Communication & Outreach</h3>
-                    <p>Use AI tools to create assets for research dissemination and professional communications. Design visuals and presentations for sharing findings, pitching ideas or building awareness.</p>
-                    <p class="topics">Topics: SVG, HTML and pixel-based image generation, AI video</p>
-                </div>
-                <div class="course-module">
-                    <h3 style="color: var(--accent-yellow);">Capstone Project & Showcase</h3>
-                    <p>Design and implement an AI solution for a real-world scenario. Receive feedback, troubleshoot technical issues, and present your work to your peers.</p>
-                    <p class="topics">Topics: Project scoping, workflow design, tool integration, presentations and feedback</p>
-                </div>
-            </div>
+        <!-- Submissions Section -->
+        <section id="submissions">
+            <h2>My Weekly Submissions</h2>
+            <p style="text-align: center; margin-bottom: 2rem; opacity: 0.8;">Here you can find links to my completed weekly projects. This section will be updated as I progress through the course!</p>
+            <ul class="submissions-list">
+                <li>
+                    <a href="https://hollydsullivan.github.io/graph-ai-portfolio/" target="_blank">
+                        Week 1: Created AI course portfolio website using AI tools
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/hollydsullivan/graph-ai-portfolio/blob/main/mmr_gdp.html" target="_blank">
+                        Week 2: Analyzed Gapminder data to explore relationships between two global indicators using AI tools
+                    </a>
+                </li>
+                <li><a href="#">Week 3: Text Summarization & Sentiment Analysis</a></li>
+                <li><a href="#">Week 4: Custom GPT for Research Assistance</a></li>
+                <li><a href="#">Week 5: Workflow Automation with Make.com</a></li>
+                <li><a href="#">Week 6: AI-Powered Visuals & Presentations</a></li>
+                <li><a href="#">Week 7: Capstone Project Proposal</a></li>
+            </ul>
         </section>
-
-<!-- Submissions Section -->
-<section id="submissions">
-    <h2>My Weekly Submissions</h2>
-    <p style="text-align: center; margin-bottom: 2rem; opacity: 0.8;">Here you can find links to my completed weekly projects. This section will be updated as I progress through the course!</p>
-    <ul class="submissions-list">
-        <li>
-            <a href="https://hollydsullivan.github.io/graph-ai-portfolio/" target="_blank">
-                Week 1: Automated Document Generation <span style="font-size: 0.85em; color: var(--accent-yellow);">↗</span>
-            </a>
-            <p style="font-size: 0.9rem; margin: 0.3rem 0 0 1rem; opacity: 0.75; font-style: italic;">
-                Created AI course portfolio website using AI tools.
-            </p>
-        </li>
-        <li>
-            <a href="https://github.com/hollydsullivan/graph-ai-portfolio/blob/main/mmr_gdp.html" target="_blank">
-                Week 2: Automated Data Analysis <span style="font-size: 0.85em; color: var(--accent-yellow);">↗</span>
-            </a>
-            <p style="font-size: 0.9rem; margin: 0.3rem 0 0 1rem; opacity: 0.75; font-style: italic;">
-                Analyzed Gapminder data to explore relationships between two global indicators using AI tools.
-            </p>
-        </li>
-        <li><a href="#" target="_blank">Week 3: Text Summarization & Sentiment Analysis <span style="font-size: 0.85em; color: var(--accent-yellow);">↗</span></a></li>
-        <li><a href="#" target="_blank">Week 4: Custom GPT for Research Assistance <span style="font-size: 0.85em; color: var(--accent-yellow);">↗</span></a></li>
-        <li><a href="#" target="_blank">Week 5: Workflow Automation with Make.com <span style="font-size: 0.85em; color: var(--accent-yellow);">↗</span></a></li>
-        <li><a href="#" target="_blank">Week 6: AI-Powered Visuals & Presentations <span style="font-size: 0.85em; color: var(--accent-yellow);">↗</span></a></li>
-        <li><a href="#" target="_blank">Week 7: Capstone Project Proposal <span style="font-size: 0.85em; color: var(--accent-yellow);">↗</span></a></li>
-    </ul>
-</section>        
     </main>
 
     <footer>
